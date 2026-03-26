@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Thorne | Premium Non-Fiction Ghostwriter</title>
+    <meta name="description" content="Professional ghostwriter for non-fiction, memoirs, and business books. Bringing your vision to life with premium, editorial-grade writing.">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav-dark">
+        <div class="container d-flex align-items-center">
+            <!-- Left: Logo -->
+            <a href="index.html" class="logo me-auto"><img src="assets/images/logo.png" alt="JT Logo" class="logo-img">JULIAN THORNE</a>
+            
+            <!-- Center: Menus (Desktop) -->
+            <ul class="nav-links d-none d-xl-flex mb-0 position-absolute start-50 translate-middle-x">
+                <li class="nav-item-dropdown">
+                    <a href="javascript:void(0)" class="nav-link active">Home <i class="bi bi-chevron-down chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html" class="dropdown-item active">Home - Classic</a></li>
+                        <li><a href="home-2.html" class="dropdown-item">Home 2 - Modern Editorial</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="tools.html" class="nav-link">Tools</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- Right: Actions & Toggle -->
+            <div class="d-flex align-items-center gap-3 ms-auto">
+                <div class="nav-actions d-none d-xl-flex align-items-center gap-3">
+                    <button class="theme-toggle" title="Toggle Theme">
+                        <i class="bi bi-moon"></i>
+                    </button>
+                    <button class="lang-toggle" title="Toggle RTL">
+                        <i class="bi bi-translate"></i>
+                    </button>
+                    <a href="login.html" class="btn-login ms-2">Login</a>
+                </div>
+
+                <button class="mobile-menu-toggle d-xl-none" aria-label="Toggle Menu">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="JT Logo" class="logo-img">JULIAN THORNE</a>
+            <button class="mobile-menu-close"><i class="bi bi-x"></i></button>
+        </div>
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-links">
+                <li class="nav-item-dropdown">
+                    <div class="mobile-dropdown-toggle">
+                        <a href="index.html" class="active">Home</a>
+                        <i class="bi bi-chevron-down ms-2 toggle-mobile-drop"></i>
+                    </div>
+                    <ul class="mobile-dropdown-menu">
+                        <li><a href="index.html" class="active">Home - Classic</a></li>
+                        <li><a href="home-2.html">Home 2 - Modern Editorial</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-nav-actions mt-5">
+                <div class="mb-4">
+                    <a href="login.html" class="btn-login-mobile">Sign in to Studio</a>
+                </div>
+                <div class="d-flex gap-4 justify-content-center">
+                    <button class="theme-toggle" title="Toggle Theme">
+                        <i class="bi bi-moon"></i>
+                    </button>
+                    <button class="lang-toggle" title="Toggle RTL">
+                        <i class="bi bi-translate"></i>
+                    </button>
+                </div>
+                <p class="small mt-4 opacity-50">Premium Ghostwriting Services</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero hero-dark" style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('assets/images/hero-bg-premium.png') no-repeat center center / cover;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <span class="hero-subtitle reveal-page mb-3">Professional Ghostwriting</span>
+                    <h1 class="hero-title">
+                        <span class="typewriter" data-text="Your Story, Masterfully Penned."></span>
+                    </h1>
+                    <p class="hero-desc reveal-page mx-auto">
+                        I help visionary leaders, entrepreneurs, and thinkers transform their expertise into premium, market-ready non-fiction books that build legacy.
+                    </p>
+                    <div class="hero-btns reveal-page d-flex justify-content-center flex-wrap gap-3">
+                        <a href="contact.html" class="btn-custom">Start Your Book</a>
+                        <a href="portfolio.html" class="btn-custom btn-outline">View Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Books Section -->
+    <section class="featured-books">
+        <div class="container">
+            <div class="section-title reveal-page">
+                <span>Selected Works</span>
+                <h2 class="highlight-sweep">Featured Masterpieces</h2>
+            </div>
+            
+            <div class="row">
+                <!-- Book 1 -->
+                <div class="col-md-4 mb-5 reveal-page">
+                    <div class="book-card">
+                        <a href="portfolio-details.html">
+                            <img src="assets/images/book1.png" alt="The Invisible Architect" class="book-cover">
+                            <div class="book-info">
+                                <h3>The Invisible Architect</h3>
+                                <p>Business & Strategy | By David Chen</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Book 2 -->
+                <div class="col-md-4 mb-5 reveal-page">
+                    <div class="book-card">
+                        <a href="portfolio-details.html">
+                            <img src="assets/images/book2.png" alt="Echoes of Silence" class="book-cover">
+                            <div class="book-info">
+                                <h3>Echoes of Silence</h3>
+                                <p>Memoir & Personal Journey | By Sarah Jenkins</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Book 3 -->
+                <div class="col-md-4 mb-5 reveal-page">
+                    <div class="book-card">
+                        <a href="portfolio-details.html">
+                            <img src="assets/images/book3.png" alt="The 22nd Century Mind" class="book-cover">
+                            <div class="book-info">
+                                <h3>The 22nd Century Mind</h3>
+                                <p>Science & Philosophy | By Dr. Aris Varma</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: The Writing Studio -->
+    <section class="studio-section py-0 overflow-hidden">
+        <div class="container-fluid p-0">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="studio-content reveal-page">
+                        <span class="subtitle">The Craft</span>
+                        <h2 class="display-4 mb-4">Where Silent Ideas Become Bold Legacies</h2>
+                        <p class="lead mb-5">Writing is not just about words; it's about the resonance of thought. In my studio, we peel back the layers of your experience to find the absolute truth of your narrative.</p>
+                        <div class="studio-features">
+                            <div class="feature-item reveal-page">
+                                <i class="bi bi-vector-pen"></i>
+                                <div>
+                                    <h5>Editorial Precision</h5>
+                                    <p>Every sentence is weighted for impact and clarity.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item reveal-page">
+                                <i class="bi bi-shield-check"></i>
+                                <div>
+                                    <h5>Unwavering Privacy</h5>
+                                    <p>Your ideas remain yours. I am but the invisible hand.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="studio-image-wrapper">
+                        <img src="assets/images/writing_studio.png" alt="Writing Studio" class="studio-img parallax-img">
+                        <div class="image-overlay-text">The Sanctum</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section (Page Turn Effect) -->
+    <section class="process-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title text-start mb-4 reveal-page">
+                        <span>The Workflow</span>
+                        <h2 class="highlight-sweep">How Magic Unfolds</h2>
+                    </div>
+                    <p class="mb-5 reveal-page">A book is more than words on paper; it's a strategic asset and a testimony of your experience. My process ensures your voice remains authentic while the structure remains impeccable.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-3 reveal-page">
+                    <div class="paper-block p-4 border h-100">
+                        <span class="h1 d-block mb-3 serif opacity-25">01.</span>
+                        <h4 class="serif mb-3">The Discovery</h4>
+                        <p class="small opacity-75">We dive deep into your core concepts, target audience, and the unique legacy you want to leave behind.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 reveal-page">
+                    <div class="paper-block p-4 border h-100">
+                        <span class="h1 d-block mb-3 serif opacity-25">02.</span>
+                        <h4 class="serif mb-3">Architectural Blueprint</h4>
+                        <p class="small opacity-75">Designing the chapter structure and narrative flow that keeps readers engaged from the first page.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 reveal-page">
+                    <div class="paper-block p-4 border h-100">
+                        <span class="h1 d-block mb-3 serif opacity-25">03.</span>
+                        <h4 class="serif mb-3">The Manuscript</h4>
+                        <p class="small opacity-75">Bi-weekly interviews and iterative drafting until every sentence resonates with your authority.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 reveal-page">
+                    <div class="paper-block p-4 border h-100">
+                        <span class="h1 d-block mb-3 serif opacity-25">04.</span>
+                        <h4 class="serif mb-3">Editorial Polish</h4>
+                        <p class="small opacity-75">Rigorous editing and formatting for publishing platforms, ensuring a top-tier final product.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Expertise Matrix -->
+    <section class="expertise-section">
+        <div class="container">
+            <div class="section-title reveal-page">
+                <span>The Impact</span>
+                <h2 class="highlight-sweep">The Ghostwriting Advantage</h2>
+            </div>
+            
+            <div class="row g-4 text-center">
+                <div class="col-md-4 reveal-page">
+                    <div class="expertise-card">
+                        <div class="card-icon"><i class="bi bi-journal-check"></i></div>
+                        <h3 class="stat-number" data-target="15">0</h3>
+                        <p>Bestsellers Guided</p>
+                        <div class="card-bg-icon"><i class="bi bi-journal-check"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal-page">
+                    <div class="expertise-card active">
+                        <div class="card-icon"><i class="bi bi-chat-quote"></i></div>
+                        <h3 class="stat-number" data-target="2">0</h3>
+                        <p>Million Words Penned</p>
+                        <div class="card-bg-icon"><i class="bi bi-chat-quote"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal-page">
+                    <div class="expertise-card">
+                        <div class="card-icon"><i class="bi bi-award"></i></div>
+                        <h3 class="stat-number" data-target="100">0</h3>
+                        <p>Percent Confidentiality</p>
+                        <div class="card-bg-icon"><i class="bi bi-award"></i></div>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title reveal-page">
+                <span>Client Voices</span>
+                <h2 class="highlight-sweep">Trusted by Visionaries</h2>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="testimonial-card mb-5 reveal-page">
+                        <i class="bi bi-quote"></i>
+                        <p class="testimonial-text">"Julian didn't just write my book; he captured my soul. He found the words I knew were there but couldn't reach myself. The result is a bestseller that has changed my business forever."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/author.png" alt="Client" class="author-img">
+                            <div class="author-info">
+                                <h4>David Chen</h4>
+                                <span>CEO, Arch-Tech Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Call to Excellence -->
+    <section class="legacy-cta-section" style="background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('assets/images/legacy_library.png') no-repeat center center / cover;">
+        <div class="container text-center text-white">
+            <div class="legacy-card reveal-page">
+                <span class="subtitle text-accent">Your Future Awaits</span>
+                <h2 class="display-3 mb-4 text-white">Don't Let Your Story Fade</h2>
+                <p class="mb-5 mx-auto" style="max-width: 700px; color: rgba(255,255,255,0.8);">The most powerful legacies are the ones written with intention. Whether it's a business manifesto or a personal memoir, your voice deserves to be heard.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="contact.html" class="btn-custom btn-pulse border-white text-white">Claim Your Legacy</a>
+                    <a href="services.html" class="btn-custom btn-outline border-white text-white">Explore Process</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-intro">
+                    <div class="footer-logo"><img src="assets/images/logo.png" alt="JT Logo">JULIAN THORNE</div>
+                    <p class="footer-desc">Crafting legacies through premium ghostwriting and editorial excellence. Based in London, working globally.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="about.html" class="footer-link">The Author</a>
+                    <a href="services.html" class="footer-link">Our Services</a>
+                    <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    <a href="tools.html" class="footer-link">The Toolkit</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="services.html" class="footer-link">Business Books</a>
+                    <a href="services.html" class="footer-link">Memoirs</a>
+                    <a href="services.html" class="footer-link">Editing</a>
+                    <a href="services.html" class="footer-link">Consulting</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <p class="footer-link">hello@julianthorne.com</p>
+                    <p class="footer-link">+44 20 7946 0958</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Julian Thorne Ghostwriting. All rights reserved.</p>
+                <div class="d-flex gap-4">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
