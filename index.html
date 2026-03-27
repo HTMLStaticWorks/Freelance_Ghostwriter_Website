@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="icon" type="image/png" href="assets/images/marionette-logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUPPET | Magical Storytelling For All Ages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="loading">
+    <div class="curtain-container">
+        <div class="curtain-side curtain-left"></div>
+        <div class="curtain-side curtain-right"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg nav-puppet fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/marionette-logo.png" alt="Puppet Logo" width="40" class="me-2-logical">
+                <span class="fw-bold tracking-tight">PUPPET</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto-logical mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shows.html">Shows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-lg-4-logical mt-3 mt-lg-0">
+                    <a href="login.html"
+                        class="btn btn-warning fw-bold text-dark px-4 rounded-pill me-3-logical">Login</a>
+                    <div class="form-check form-switch me-3-logical"><input class="form-check-input" type="checkbox"
+                            id="rtl-toggle"><label class="form-check-label small" for="rtl-toggle">RTL</label></div>
+                    <div class="form-check form-switch me-3-logical"><input class="form-check-input" type="checkbox"
+                            id="theme-toggle"><label class="form-check-label small" for="theme-toggle"><i
+                                class="bi bi-moon-stars"></i></label></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header
+        class="hero-section position-relative overflow-hidden d-flex align-items-center justify-content-center text-center">
+        <div class="stage-layer stage-depth-1 position-absolute w-100 h-100"
+            style="background: url('assets/images/hero-index.png') center/cover; opacity: 0.6;"></div>
+        <div class="stage-layer stage-depth-2 position-absolute w-100 h-100"
+            style="background: var(--puppet-gradient-stage);"></div>
+        <div class="container position-relative z-3 pt-5 reveal">
+            <span class="badge bg-warning text-dark px-3 py-2 mb-3 rounded-pill">EXPERIENCE THE MAGIC</span>
+            <h1 class="display-1 fw-bold mb-4">Step Into a World of <br><span class="text-warning">Puppetry Magic
+                    ??</span></h1>
+            <p class="lead mb-5 opacity-75 max-width-600 mx-auto">Discover a whimsical theater where strings tell
+                stories, <br>imaginations take flight, and magic is just a pull away.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#featured"
+                    class="magnetic-btn btn btn-lg btn-outline-light border-2 px-5 text-decoration-none">View Shows</a>
+                <a href="about.html" class="magnetic-btn btn btn-lg btn-warning text-dark px-5 text-decoration-none">Our
+                    Story</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="featured" class="py-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <div>
+                    <span class="text-warning fw-bold text-uppercase small tracking-widest mb-2 d-block">The Main
+                        Stage</span>
+                    <h2 class="display-4 fw-bold">Featured <span class="text-warning">Performances</span></h2>
+                    <p class="text-muted">Hand-crafted stories for curious souls of all ages.</p>
+                </div>
+                <a href="shows.html"
+                    class="main-stage-link text-warning text-decoration-none fw-bold hover-translate-x transition-all d-inline-flex mt-3">
+                    See All Shows <i class="bi bi-arrow-right ms-2-logical"></i>
+                </a>
+            </div>
+            <div class="row g-4 featured-stage-grid">
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="anti-gravity-card featured-stage-card h-100">
+                        <div class="puppet-string"></div>
+                        <div class="overflow-hidden rounded-4 mb-4">
+                            <img src="assets/images/show1.png" alt="The Wood-Witch's Secret"
+                                class="img-fluid hover-zoom transition-all duration-500">
+                        </div>
+                        <h3 class="h4 my-2">The Wood-Witch's Secret</h3>
+                        <p class="small text-muted mb-4">An enchanting musical journey through the heart of the
+                            cardboard forest.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="fw-bold fs-5 text-warning">$15.00</span>
+                            <a href="show-details.html"
+                                class="btn btn-sm btn-outline-warning rounded-pill px-4 py-2 fw-bold">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ... other items removed for brevity in thinking but I will include them in write ... -->
+                <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.1s">
+                    <div class="anti-gravity-card featured-stage-card h-100">
+                        <div class="puppet-string"></div>
+                        <div class="overflow-hidden rounded-4 mb-4">
+                            <img src="assets/images/show2.png" alt="Pinocchio Restrung"
+                                class="img-fluid hover-zoom transition-all duration-500">
+                        </div>
+                        <h3 class="h4 my-2">Pinocchio Restrung</h3>
+                        <p class="small text-muted mb-4">A dramatic modern twist on the classic tale of strings and
+                            freedom.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="fw-bold fs-5 text-warning">$18.00</span>
+                            <a href="show-details.html"
+                                class="btn btn-sm btn-outline-warning rounded-pill px-4 py-2 fw-bold">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.2s">
+                    <div class="anti-gravity-card featured-stage-card h-100">
+                        <div class="puppet-string"></div>
+                        <div class="overflow-hidden rounded-4 mb-4">
+                            <img src="assets/images/show3.png" alt="The Space Trip"
+                                class="img-fluid hover-zoom transition-all duration-500">
+                        </div>
+                        <h3 class="h4 my-2">The Space Trip</h3>
+                        <p class="small text-muted mb-4">An out-of-this-world adventure where felt astronauts touch the
+                            stars.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="fw-bold fs-5 text-warning">$12.00</span>
+                            <a href="show-details.html"
+                                class="btn btn-sm btn-outline-warning rounded-pill px-4 py-2 fw-bold">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ??? NEW SECTION 1: THE ARTISAN'S WORKSHOP -->
+    <section class="py-section bg-secondary-stage overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 reveal">
+                    <div class="workshop-float">
+                        <img src="assets/images/workshop.png" alt="Workshop"
+                            class="img-fluid rounded-5 shadow-2xl border border-white border-opacity-10">
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal workshop-copy" style="transition-delay: 0.2s">
+                    <span class="text-warning fw-bold text-uppercase small tracking-widest mb-3 d-block">Behind the
+                        Velvet Curtain</span>
+                    <h2 class="display-4 fw-bold mb-4">The Magic of the <br><span class="text-warning">Artisan's
+                            Workshop</span></h2>
+                    <p class="lead text-muted mb-4">Every marionette in our mansion is born from a single block of wood
+                        and a spark of imagination. Our master carvers spend months perfecting every joint, every
+                        expression, and every thread.</p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="bi bi-patch-check-fill text-warning me-3 fs-4"></i> <span>Hand-carved Linden wood
+                                bodies</span></li>
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="bi bi-patch-check-fill text-warning me-3 fs-4"></i> <span>Custom silk-blend
+                                control strings</span></li>
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="bi bi-patch-check-fill text-warning me-3 fs-4"></i> <span>Traditional
+                                Bunraku-inspired articulation</span></li>
+                    </ul>
+                    <a href="about.html" class="btn btn-outline-warning rounded-pill px-5 py-3 fw-bold">Explore the
+                        Craft</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ?? NEW SECTION 2: PUPPET WISDOM -->
+    <section class="py-section position-relative">
+        <div class="container text-center reveal">
+            <div class="wisdom-sparkle p-5 bg-glass rounded-5 border border-white border-opacity-10">
+                <i class="bi bi-quote display-1 text-warning opacity-25 mb-4 d-block"></i>
+                <h2 class="display-5 fw-bold mb-5 italic">"A puppet is not just wood and wire; <br>it is the physical
+                    manifestation of a story <br>waiting to be restrung."</h2>
+                <div class="d-flex justify-content-center align-items-center gap-3">
+                    <img src="assets/images/wisdom.png" alt="Wisdom" class="rounded-circle border border-warning"
+                        width="80" height="80" style="object-fit: cover;">
+                    <div class="text-start">
+                        <h4 class="h6 mb-0 fw-bold">Master Elian Thorne</h4>
+                        <p class="small text-muted mb-0">Senior Puppeteer & Artistic Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ??? NEW SECTION 3: THE ENCORE CLUB -->
+    <section class="py-section bg-curtain-texture">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 reveal encore-slide">
+                    <h2 class="display-3 fw-bold text-white mb-4">Join the <span class="text-warning">Encore Club</span>
+                    </h2>
+                    <p class="lead text-white opacity-75 mb-5">Be a part of our secret society. Gain early access to
+                        premier shows, exclusive behind-the-scenes workshop tours, and limited edition miniature
+                        puppets.</p>
+                    <div class="row g-4 mb-5">
+                        <div class="col-6 col-md-4">
+                            <div class="glass-pill p-3 text-center"><i
+                                    class="bi bi-stars text-warning d-block mb-2 fs-2"></i><span
+                                    class="small fw-bold">Early Access</span></div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="glass-pill p-3 text-center"><i
+                                    class="bi bi-gift text-warning d-block mb-2 fs-2"></i><span
+                                    class="small fw-bold">Exclusive Gifts</span></div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="glass-pill p-3 text-center"><i
+                                    class="bi bi-ticket-perforated text-warning d-block mb-2 fs-2"></i><span
+                                    class="small fw-bold">Member Deals</span></div>
+                        </div>
+                    </div>
+                    <a href="signup.html"
+                        class="encore-cta btn btn-warning btn-lg px-5 py-3 fw-bold text-dark rounded-pill">Become
+                        a Patron</a>
+                </div>
+                <div class="col-lg-5 reveal mt-4 mt-lg-0" style="transition-delay: 0.4s">
+                    <img src="assets/images/club.png" alt="Encore Club" class="img-fluid rounded-5 shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ?? EVENT BANNER / CTA -->
+    <section class="py-section text-center text-white bg-dark overflow-hidden position-relative">
+        <div class="container position-relative z-1 reveal">
+            <h2 class="display-3 fw-bold mb-4">Ready to Join the Audience?</h2>
+            <p class="lead mb-5 opacity-75">Tickets are selling fast for the Spring Festival!</p>
+            <div class="audience-cta-group d-flex justify-content-center gap-4">
+                <a href="pricing.html"
+                    class="magnetic-btn btn btn-warning btn-lg px-5 py-3 fw-bold text-dark text-decoration-none">Book
+                    Tickets Now</a>
+                <a href="contact.html"
+                    class="magnetic-btn btn btn-outline-light btn-lg px-5 py-3 fw-bold text-decoration-none">Contact Box
+                    Office</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ?? NEW 4-COLUMN FOOTER (PUPPET THEATER) -->
+    <footer class="py-5 mt-5 border-top">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Col 1: Branding & Socials -->
+                <div class="col-lg-4 reveal">
+                    <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
+                        <img src="assets/images/marionette-logo.png" alt="Puppet Logo" width="40" class="me-2-logical">
+                        <span class="fw-bold tracking-tight">PUPPET</span>
+                    </a>
+                    <p class="text-muted mb-4 opacity-75">Bringing the magic of hand-crafted storytelling to the grand
+                        stage. From classic marionettes to modern fantasies, every string tells a story.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-warning rounded-circle p-2 social-bounce-item"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-warning rounded-circle p-2 social-bounce-item"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-warning rounded-circle p-2 social-bounce-item"><i
+                                class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <!-- Col 2: Navigation -->
+                <div class="col-lg-2 reveal" style="transition-delay: 0.1s">
+                    <h5 class="fw-bold mb-4 ">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html"
+                                class="text-muted text-decoration-none hover-warning">Home</a></li>
+                        <li class="mb-2"><a href="home-2.html"
+                                class="text-muted text-decoration-none hover-warning">Alternative Stage</a></li>
+                        <li class="mb-2"><a href="about.html"
+                                class="text-muted text-decoration-none hover-warning">About Us</a></li>
+                        <li class="mb-2"><a href="shows.html"
+                                class="text-muted text-decoration-none hover-warning">Shows</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3: Community/Resources -->
+                <div class="col-lg-2 reveal" style="transition-delay: 0.2s">
+                    <h5 class="fw-bold mb-4 ">The Stage</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="blog.html"
+                                class="text-muted text-decoration-none hover-warning">Blog</a></li>
+                        <li class="mb-2"><a href="pricing.html"
+                                class="text-muted text-decoration-none hover-warning">Memberships</a></li>
+                        <li class="mb-2"><a href="faq.html"
+                                class="text-muted text-decoration-none hover-warning">FAQ</a></li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="text-muted text-decoration-none hover-warning">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4: Newsletter Subscription -->
+                <div class="col-lg-4 reveal" style="transition-delay: 0.3s">
+                    <h5 class="fw-bold mb-4 ">Newsletter</h5>
+                    <p class="text-muted mb-4 opacity-75">Sign up for exclusive show alerts and theater news.</p>
+                    <div class="input-group mb-3 bg-glass rounded-4 p-1">
+                        <input type="email"
+                            class="form-control bg-transparent border-0 placeholder-muted px-3"
+                            placeholder="Enter your email...">
+                        <button class="btn btn-warning rounded-4 px-4" type="button"><i
+                                class="bi bi-send-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 text-muted opacity-25">
+            <div class="row align-items-center reveal" style="transition-delay: 0.4s">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-muted small">&copy; 2026 PUPPET Theater Company. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="faq.html" class="text-muted text-decoration-none small mx-3 hover-warning">FAQ</a>
+                    <span class="text-muted opacity-25">|</span>
+                    <a href="contact.html" class="text-muted text-decoration-none small mx-3 hover-warning">Contact
+                        Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

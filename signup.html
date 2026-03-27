@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="icon" type="image/png" href="assets/images/marionette-logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUPPET</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .auth-container {
+            min-height: 100vh;
+            background: radial-gradient(circle at center, #1A2634 0%, #0B0F14 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .auth-card {
+            width: 100%;
+            max-width: 480px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 3rem;
+            transform: translateY(0);
+            transition: all 0.5s var(--ease-puppet);
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+        }
+
+        .auth-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--puppet-accent);
+        }
+
+        .auth-card {
+            color: var(--puppet-text-light) !important;
+            transition: color 0.3s ease, background 0.3s ease;
+        }
+
+        body[data-theme="light"] .auth-card {
+            color: #0b0f14 !important;
+        }
+
+        .auth-card h2,
+        .auth-card p,
+        .auth-card span,
+        .auth-card .form-label,
+        .auth-card .social-btn,
+        .auth-card a:not(.btn) {
+            color: inherit !important;
+        }
+
+        .social-btn {
+            border: 1px solid var(--glass-border);
+            background: rgba(255, 255, 255, 0.05);
+            color: inherit;
+            border-radius: 12px;
+            padding: 12px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            margin-bottom: 0.8rem;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .social-btn:hover {
+            background: rgba(255, 255, 255, 0.12) !important;
+            border-color: var(--puppet-accent) !important;
+            transform: translateY(-3px) scale(1.02);
+            color: var(--puppet-accent) !important;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .auth-card a {
+            transition: all 0.3s var(--ease-puppet);
+        }
+
+        .auth-card a:hover {
+            color: var(--puppet-accent) !important;
+            text-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+            opacity: 1 !important;
+        }
+
+        .auth-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--puppet-accent);
+            opacity: 0.9;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 2rem 0;
+            color: var(--puppet-text-muted);
+            font-size: 0.8rem;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .divider:not(:empty)::before {
+            margin-right: .5em;
+        }
+
+        .divider:not(:empty)::after {
+            margin-left: .5em;
+        }
+
+        .auth-logo {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .auth-logo a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .auth-logo img {
+            width: 50px;
+        }
+
+        .form-control-puppet {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: inherit;
+            padding: 12px 18px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control-puppet:focus {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--puppet-accent);
+            box-shadow: none;
+            color: inherit;
+        }
+
+        .theme-toggle-container {
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 576px) {
+            .theme-toggle-container {
+                top: auto !important;
+                bottom: 1.5rem !important;
+                right: 1.5rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="loading">
+    <div class="curtain-container">
+        <div class="curtain-side curtain-left"></div>
+        <div class="curtain-side curtain-right"></div>
+    </div>
+
+    <div class="auth-container">
+        <!-- Decoration strings -->
+        <!-- Floating Theme Toggle -->
+        <div class="theme-toggle-container position-fixed top-0 end-0 p-3 z-3 text-white">
+            <div
+                class="form-check form-switch bg-glass rounded-pill px-4 py-2 border border-white border-opacity-10 shadow-lg d-flex align-items-center">
+                <input class="form-check-input mt-0" type="checkbox" id="theme-toggle">
+                <label class="form-check-label small ms-2" for="theme-toggle">
+                    <i class="bi bi-moon-stars"></i>
+                </label>
+            </div>
+        </div>
+
+        <div class="auth-card reveal">
+            <div class="auth-logo">
+                <a href="index.html" class="hover-warning">
+                    <img src="assets/images/marionette-logo.png" alt="Puppet Logo">
+                    <span class="fs-4 fw-bold tracking-tight">PUPPET</span>
+                </a>
+            </div>
+
+            <h2 class="h4 fw-bold text-center mb-4">Join the Theater!</h2>
+            <p class="text-center small text-muted mb-4">Create your account to start booking shows and tracking your
+                favorites.</p>
+
+            <div class="row gx-2">
+                <div class="col-6"><a href="#" class="social-btn"><i class="bi bi-google text-danger"></i> Google</a>
+                </div>
+                <div class="col-6"><a href="#" class="social-btn"><i class="bi bi-facebook text-primary"></i>
+                        Facebook</a></div>
+            </div>
+
+            <div class="divider">OR USE EMAIL</div>
+
+            <form>
+                <div class="row g-3 mb-3">
+                    <div class="col-6">
+                        <label class="form-label auth-label">First Name</label>
+                        <input type="text" class="form-control form-control-puppet" placeholder="John">
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label auth-label">Last Name</label>
+                        <input type="text" class="form-control form-control-puppet" placeholder="Doe">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label auth-label">Email Address</label>
+                    <input type="email" class="form-control form-control-puppet" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label auth-label">Password</label>
+                    <input type="password" class="form-control form-control-puppet" placeholder="••••••••">
+                </div>
+                <div class="form-check mb-4 text-start">
+                    <input class="form-check-input" type="checkbox" id="termsAgree">
+                    <label class="form-check-label small opacity-75" for="termsAgree">
+                        I agree to the <a href="#" class="text-warning text-decoration-none fw-bold hover-warning">Terms
+                            and Conditions</a>
+                    </label>
+                </div>
+                <button type="submit"
+                    class="btn btn-warning w-100 py-3 fw-bold rounded-pill mb-3 btn-hover-highlight">Join the
+                    Audience</button>
+            </form>
+
+            <p class="text-center small text-muted mb-0">Already have an account? <a href="login.html"
+                    class="text-warning text-decoration-none">Login</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
