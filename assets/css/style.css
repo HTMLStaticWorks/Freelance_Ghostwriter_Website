@@ -2030,6 +2030,12 @@ footer {
     opacity: 1;
 }
 
+[data-theme="dark"] .philosophy-card {
+    background-color: #080808;
+    border-color: rgba(194, 141, 94, 0.4);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
 /* --- Portfolio Gallery --- */
 .portfolio-card {
     transition: var(--transition);
@@ -2818,5 +2824,4 @@ html[data-theme="light"] .contact-section .bg-secondary .text-accent {
     z-index: 5;
     pointer-events: none;
 }
-
 
