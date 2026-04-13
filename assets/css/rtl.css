@@ -130,8 +130,18 @@
     left: 30px;
 }
 
+[dir="rtl"] .auth-lang-toggle {
+    right: auto;
+    left: 80px;
+}
+
 [dir="rtl"] .auth-form .form-control {
     text-align: right;
+}
+
+[dir="rtl"] .password-toggle {
+    right: auto;
+    left: 15px;
 }
 
 [dir="rtl"] .auth-link.ms-1 {

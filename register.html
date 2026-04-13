@@ -19,6 +19,9 @@
         <button class="theme-toggle auth-theme-toggle" title="Toggle Theme">
             <i class="bi bi-moon"></i>
         </button>
+        <button class="lang-toggle auth-lang-toggle" title="Toggle RTL">
+            <i class="bi bi-arrow-left-right"></i>
+        </button>
 
         <div class="auth-card reveal-page">
             <div class="text-center mb-5">
@@ -31,8 +34,9 @@
             <button class="btn-social">
                 <i class="bi bi-google"></i>Google
             </button>
+
             <button class="btn-social">
-                <i class="bi bi-facebook"></i>Facebook
+                <i class="bi bi-apple"></i>Apple
             </button>
 
             <div class="divider">
@@ -52,7 +56,12 @@
                 </div>
                 <div class="form-group">
                     <label>Create Password</label>
-                    <input type="password" class="form-control" placeholder="••••••••" required>
+                    <div class="password-wrap">
+                        <input type="password" class="form-control" placeholder="••••••••" required>
+                        <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="mb-4 d-flex align-items-start gap-2 small">

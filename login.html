@@ -19,6 +19,9 @@
         <button class="theme-toggle auth-theme-toggle" title="Toggle Theme">
             <i class="bi bi-moon"></i>
         </button>
+        <button class="lang-toggle auth-lang-toggle" title="Toggle RTL">
+            <i class="bi bi-arrow-left-right"></i>
+        </button>
 
         <div class="auth-card reveal-page">
             <div class="text-center mb-5">
@@ -31,8 +34,9 @@
             <button class="btn-social">
                 <i class="bi bi-google"></i>Google
             </button>
+
             <button class="btn-social">
-                <i class="bi bi-facebook"></i>Facebook
+                <i class="bi bi-apple"></i>Apple
             </button>
 
             <div class="divider">
@@ -45,11 +49,21 @@
                     <input type="email" class="form-control" placeholder="david@example.com" required>
                 </div>
                 <div class="form-group">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <label>Password</label>
-                        <a href="#" class="small auth-link">Forgot?</a>
+                    <label>Password</label>
+                    <div class="password-wrap">
+                        <input type="password" class="form-control" placeholder="••••••••" required>
+                        <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                            <i class="bi bi-eye"></i>
+                        </button>
                     </div>
-                    <input type="password" class="form-control" placeholder="••••••••" required>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mb-4 small">
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="checkbox" id="remember" class="mt-0">
+                        <label for="remember" class="mb-0 opacity-75">Remember me</label>
+                    </div>
+                    <a href="#" class="auth-link">Forgot Password?</a>
                 </div>
 
                 <button type="submit" class="btn-custom w-100 mt-4 py-3">Login to Studio</button>

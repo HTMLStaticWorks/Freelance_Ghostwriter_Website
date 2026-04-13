@@ -16,7 +16,7 @@
 
 [data-theme="dark"] {
     --primary: #F8F6F2;
-    --secondary: #0F172A;
+    --secondary: #000000;
     --accent: #C28D5E; /* Adjusted for dark contrast */
 }
 
@@ -438,7 +438,7 @@ nav.scrolled {
 }
 
 [data-theme="dark"] .page-header {
-    background-color: #0F172A; /* Stay dark in dark mode or slightly different? */
+    background-color: #000000; /* Stay dark in dark mode or slightly different? */
     border-bottom-color: rgba(255, 255, 255, 0.05);
 }
 .section-title {
@@ -1310,7 +1310,7 @@ footer {
 }
 
 [data-theme="dark"] .auth-card {
-    background-color: #1e293b;
+    background-color: #111111;
     border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -1420,8 +1420,42 @@ footer {
     z-index: 100;
 }
 
-[data-theme="dark"] .auth-theme-toggle {
+.auth-lang-toggle {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    z-index: 100;
+}
+
+[data-theme="dark"] .auth-theme-toggle,
+[data-theme="dark"] .auth-lang-toggle {
     color: white;
+}
+
+.password-wrap {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--primary);
+    opacity: 0.5;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.password-toggle:hover {
+    opacity: 1;
+    color: var(--accent);
 }
 
 
@@ -1572,7 +1606,7 @@ footer {
 }
 
 [data-theme="dark"] .h2-img-overlay {
-    background: linear-gradient(to right, #0F172A, transparent 40%);
+    background: linear-gradient(to right, #000000, transparent 40%);
 }
 
 [data-theme="dark"] .h2-floating-badge {
@@ -1714,7 +1748,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), url("../images/home2_canvas_detail_1774503652619.png") no-repeat center center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/home2_canvas_detail_1774503652619.png") no-repeat center center / cover;
     text-align: center;
     padding: 100px 20px;
     color: #F8F6F2 !important; /* Force readable light color */
@@ -1766,7 +1800,7 @@ footer {
 }
 
 [data-theme="dark"] .h2-showcase {
-    background-color: #020617;
+    background-color: #000000;
 }
 
 .h2-case-card {
@@ -1851,7 +1885,7 @@ footer {
 }
 
 [data-theme="dark"] .dropdown-menu {
-    background-color: #1e293b;
+    background-color: #111111;
     border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -2307,6 +2341,17 @@ footer {
     margin: 50px auto;
 }
 
+.global-map-img {
+    opacity: 1;
+    filter: brightness(1.1);
+    transition: var(--transition);
+}
+
+[data-theme="dark"] .global-map-img {
+    opacity: 0.7;
+    filter: brightness(1.3) contrast(1.1);
+}
+
 .global-node {
     position: absolute;
     width: 10px;
@@ -2364,7 +2409,7 @@ footer {
 }
 
 [data-theme="dark"] .protocol-card {
-    background-color: #1e293b;
+    background-color: #111111;
     border-color: rgba(255, 255, 255, 0.05) !important;
 }
 
@@ -2711,4 +2756,67 @@ html[data-theme="light"] .contact-section .bg-secondary .text-accent {
     color: #fff !important;
     text-shadow: 0 0 30px rgba(0,0,0,1), 0 0 10px rgba(164, 113, 72, 0.6);
 }
+
+/* --- Workflow Section Improvements --- */
+.process-section {
+    background-color: var(--secondary);
+    position: relative;
+    z-index: 1;
+}
+
+.paper-block {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: var(--transition);
+    border-color: rgba(15, 23, 42, 0.1) !important;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+[data-theme="dark"] .paper-block {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.paper-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent) !important;
+    background-color: #fff;
+}
+
+[data-theme="dark"] .paper-block:hover {
+    background-color: #111;
+}
+
+.paper-img-wrap {
+    width: 100%;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.paper-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.paper-block:hover .paper-img-wrap img {
+    transform: scale(1.1);
+}
+
+.paper-block .serif.opacity-25 {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 2.2rem;
+    line-height: 1;
+    z-index: 5;
+    pointer-events: none;
+}
+
 

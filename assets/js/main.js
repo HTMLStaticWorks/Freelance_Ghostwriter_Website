@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeaderDropdowns();
     initRTL();
     initBackToTop();
+    initPasswordToggle();
 });
 
 // --- Theme Management ---
@@ -261,6 +262,26 @@ function initBackToTop() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
+        });
+    });
+}
+
+// --- Password Toggle ---
+function initPasswordToggle() {
+    const toggles = document.querySelectorAll('.password-toggle');
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            const wrap = this.parentElement;
+            const input = wrap.querySelector('input');
+            const icon = this.querySelector('i');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.replace('bi-eye', 'bi-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.replace('bi-eye-slash', 'bi-eye');
+            }
         });
     });
 }
